@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 35px auto;
+  width: 81%;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.headerMenu {
+  display: none;
+}
+
+.headerMenu a {
+  display: block;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: capitalize;
+}
+
+.headerMenu a:first-child {
+  color: var(--color-secondary);
+  text-decoration: underline var(--color-highlight);
+  text-underline-offset: 6px;
+}
+
+.headerBtn {
+  display: none;
+}
+
+.headerBtn button:first-child {
+  background-color: white;
+  border: 1px solid var(--color-highlight);
+  color: var(--color-highlight);
+}
+
+.headerBtn button:nth-child(2) {
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+}
+
+.menuBtn {
+  display: block;
+  z-index: 50;
+}
+
+.menuBtn button {
+  border: none;
+  background-color: transparent;
+}
+
+.menuBox {
+  padding: 20px;
+  position: absolute;
+  background-color: aliceblue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menuBox a {
+  display: block;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: capitalize;
+}
+
+.menuBox a:first-child {
+  color: var(--color-secondary);
+  text-decoration: underline var(--color-highlight);
+  text-underline-offset: 6px;
+}
+
+.headerBtnBox {
+  display: flex;
+  gap: 20px;
+}
+
+.headerBtnBox button:first-child {
+  background-color: white;
+  border: 1px solid var(--color-highlight);
+  color: var(--color-highlight);
+}
+
+.headerBtnBox button:nth-child(2) {
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+}
+
+@media (min-width: 1280px) {
+  .headerMenu {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4px;
+    min-width: 601px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerBtn {
+    min-width: 226px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuBtn {
+    display: none;
+  }
+}
+
+@media (min-width: 1536px) {
+  .header {
+    width: 1300px;
+  }
+}
