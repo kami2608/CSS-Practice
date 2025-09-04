@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import styles from "./Header.module.css";
 import { menuOptions } from "../../paths/MenuOptions";
 import clsx from "clsx";
+import iconMenu from "../../assets/IconMenu.png"
 
 interface MenuSPProps {
   isMenuOpen: boolean;
@@ -17,7 +18,7 @@ const MenuSP: FC<MenuSPProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       {!isMenuOpen && (
         <div className={styles.btnControllerSP}>
           <Button onClick={() => setIsMenuOpen(true)}>
-            <img src="src\assets\IconMenu.png" alt="Menu button" />
+            <img src={iconMenu} alt="Menu button" />
           </Button>
         </div>
       )}
