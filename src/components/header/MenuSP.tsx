@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import styles from "./Header.module.css";
 import { menuOptions } from "../../paths/MenuOptions";
 import clsx from "clsx";
-import iconMenu from "../../assets/IconMenu.png"
+import iconMenu from "../../assets/IconMenu.png";
 
 interface MenuSPProps {
   isMenuOpen: boolean;
@@ -12,7 +12,6 @@ interface MenuSPProps {
 }
 
 const MenuSP: FC<MenuSPProps> = ({ isMenuOpen, setIsMenuOpen }) => {
-  console.log(clsx(styles.menuSP, isMenuOpen && styles.menuSPOpen));
   return (
     <>
       {!isMenuOpen && (
@@ -31,11 +30,17 @@ const MenuSP: FC<MenuSPProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       )}
 
       <nav className={clsx(styles.menuSP, isMenuOpen && styles.menuSPOpen)}>
-        {menuOptions.map((menu, index) => (
-          <a key={index} href={menu.link}>
-            {menu.title}
-          </a>
-        ))}
+        {menuOptions.map((menu, index) => {
+          return location.pathname === menu.link ? (
+            <a key={index} href={menu.link} className={styles.active}>
+              {menu.title}
+            </a>
+          ) : (
+            <a key={index} href={menu.link}>
+              {menu.title}
+            </a>
+          );
+        })}
         <div className={styles.btnSP}>
           <Button className={styles.loginBtn}>Đăng ký</Button>
           <Button className={styles.signupBtn}>Đăng Nhập</Button>

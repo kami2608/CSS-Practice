@@ -2,9 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
-  margin: 35px auto;
-  width: 85%;
+  padding: 35px;
+}
+
+.header a {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: var(--color-highlight);
+}
+
+.header .active {
+  color: var(--color-secondary);
+  text-decoration: underline var(--color-highlight);
+  text-underline-offset: 6px;
 }
 
 .logo img {
@@ -14,21 +30,6 @@
 
 .menuPC {
   display: none;
-}
-
-.menuPC a {
-  display: block;
-  font-size: var(--font-sm);
-  font-weight: 600;
-  color: var(--color-primary);
-  text-transform: capitalize;
-  text-decoration: none;
-}
-
-.menuPC a:first-child {
-  color: var(--color-secondary);
-  text-decoration: underline var(--color-highlight);
-  text-underline-offset: 6px;
 }
 
 .btnPC {
@@ -69,14 +70,15 @@
 
 .menuSP {
   display: flex;
+  flex-direction: column;
   padding: 20px;
   position: absolute;
-  background-color: aliceblue;
   top: -100vh;
   left: 0;
   width: 100%;
   z-index: 10;
-  flex-direction: column;
+  background-color: aliceblue;
+  border-bottom: 1px solid var(--color-primary);
   align-items: center;
   gap: 20px;
   transition: top 0.3s ease;
@@ -87,43 +89,30 @@
   transition: top 0.3s ease;
 }
 
-.menuSP a {
-  display: block;
-  font-size: var(--font-sm);
-  font-weight: 600;
-  color: var(--color-primary);
-  text-transform: capitalize;
-  text-decoration: none;
-}
-
-.menuSP a:first-child {
-  color: var(--color-secondary);
-  text-decoration: underline var(--color-highlight);
-  text-underline-offset: 6px;
-}
-
 .btnSP {
   display: flex;
   gap: 20px;
 }
 
 @media (min-width: 1280px) {
+  .header {
+    padding: 35px 10%;
+  }
   .menuSP {
     display: none;
   }
   .menuPC {
+    flex: 1;
     display: flex;
-    flex-direction: column;
     padding-bottom: 4px;
-    min-width: 601px;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
   }
+
   .btnPC {
-    min-width: 226px;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
   }
   .btnControllerSP {
     display: none;
@@ -132,6 +121,9 @@
 
 @media (min-width: 1536px) {
   .header {
-    width: 1300px;
+    padding: 35px 15%;
+  }
+  .menuPC {
+    gap: 3vw;
   }
 }

@@ -4,9 +4,9 @@ export interface MenuOption {
 }
 
 export const menuOptions: MenuOption[] = [
-  { title: "Chương trình học", link: "#" },
-  { title: "Blog", link: "#" },
-  { title: "Thư viện", link: "#" },
-  { title: "Bảng xếp hạng", link: "#" },
-  { title: "Trợ giúp", link: "#" },
+  { title: "Chương trình học", link: "/curriculum" },
+  { title: "Blog", link: "/blog" },
+  { title: "Thư viện", link: "/library" },
+  { title: "Bảng xếp hạng", link: "/ranking" },
+  { title: "Trợ giúp", link: "/help" },
 ];

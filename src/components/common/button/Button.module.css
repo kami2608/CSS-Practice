@@ -5,3 +5,8 @@
   font-weight: 500;
   border-radius: 5px;
 }
+
+.btn:hover {
+  outline: 2px solid var(--color-highlight);
+  opacity: 70%;
+}

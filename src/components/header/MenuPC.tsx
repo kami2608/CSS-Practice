@@ -7,11 +7,17 @@ const MenuPC: FC = () => {
   return (
     <>
       <nav className={styles.menuPC}>
-        {menuOptions.map((menu, index) => (
-          <a key={index} href={menu.link}>
-            {menu.title}
-          </a>
-        ))}
+        {menuOptions.map((menu, index) => {
+          return location.pathname === menu.link ? (
+            <a key={index} href={menu.link} className={styles.active}>
+              {menu.title}
+            </a>
+          ) : (
+            <a key={index} href={menu.link}>
+              {menu.title}
+            </a>
+          );
+        })}
       </nav>
       <div className={styles.btnPC}>
         <Button className={styles.loginBtn}>Đăng ký</Button>
