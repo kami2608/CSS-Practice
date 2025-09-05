@@ -1,0 +1,13 @@
+.navbarItem {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.active {
+  color: var(--color-secondary);
+  text-decoration: underline var(--color-highlight);
+  text-underline-offset: 6px;
+}

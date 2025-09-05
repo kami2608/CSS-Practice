@@ -1,0 +1,26 @@
+.navbarSP {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: aliceblue;
+  border-bottom: 1px solid var(--color-primary);
+  align-items: center;
+  gap: 20px;
+  transition: top 0.3s ease;
+}
+
+.navbarSPOpen {
+  top: 0;
+  transition: top 0.3s ease;
+}
+
+/* @media (min-width: 1280px) {
+  .navbarSP {
+    display: none;
+  }
+} */
