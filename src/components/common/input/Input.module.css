@@ -1,0 +1,23 @@
+.input {
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+  font-family: var(--font-utmAvo);
+  background-color: transparent;
+  width: 100%;
+  color: white;
+  outline: none;
+}
+
+.input::placeholder {
+  font-family: var(--font-utmAvo);
+  color: var(--color-text);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}

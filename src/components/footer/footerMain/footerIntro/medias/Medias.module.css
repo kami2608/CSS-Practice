@@ -1,0 +1,5 @@
+.medias {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

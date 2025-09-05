@@ -1,0 +1,39 @@
+.footerAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerTitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footerLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerLinks a:hover {
+  color: var(--color-active);
+}
+
+.footerAbout .active {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .footerAbout {
+    flex-basis: 168px;
+  }
+}

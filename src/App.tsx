@@ -1,9 +1,7 @@
+import Footer from "./components/footer/Footer";
+
 function App() {
-  return (
-    <>
-      <p>Hello world</p>
-    </>
-  );
+  return <Footer />;
 }
 
 export default App;
