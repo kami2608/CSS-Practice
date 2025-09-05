@@ -1,4 +1,4 @@
-interface Service {
+export interface Service {
   topic: string;
   features: { title: string; href: string }[];
 }

@@ -1,8 +1,8 @@
 import type { FC } from "react";
-import styles from "./Footer.module.css";
-import Input from "../common/input/Input";
-import mail from "../../assets/icons/mail_register.png";
-import Button from "../common/button/Button";
+import styles from "./FooterRegister.module.css";
+import mail from "../../../assets/icons/mail_register.png";
+import Input from "../../common/input/Input";
+import Button from "../../common/button/Button";
 
 const FooterRegister: FC = () => {
   return (

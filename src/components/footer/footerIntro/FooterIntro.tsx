@@ -1,7 +1,7 @@
 import type { FC } from "react";
-import Medias from "./Medias";
-import styles from "./Footer.module.css";
-import logo from "../../assets/logo/Mask_logo.png";
+import styles from "./FooterIntro.module.css";
+import logo from "../../../assets/logo/Mask_logo.png";
+import Medias from "../medias/Medias";
 
 const FooterIntro: FC = () => {
   return (

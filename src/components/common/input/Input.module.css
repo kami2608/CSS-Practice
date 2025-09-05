@@ -19,5 +19,5 @@
 }
 
 .input:focus::placeholder {
-    color: transparent;
+  color: transparent;
 }

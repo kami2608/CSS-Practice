@@ -1,0 +1,66 @@
+.footerRegister {
+  background: var(--gradient-orange);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 50px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.footerRegister img {
+  width: 100px;
+  padding: 25px;
+  padding-bottom: 35px;
+  background-color: var(--color-navi);
+}
+
+.footerRegister h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: var(--font-test);
+}
+
+.footerRegister input {
+  text-align: center;
+}
+
+.footerRegister button {
+  background-color: var(--color-navi);
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.registerLabel,
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (min-width: 1024px) {
+  .footerRegister {
+    flex-direction: row;
+    padding-bottom: 0;
+    justify-content: space-between;
+  }
+
+  .footerRegister input {
+    text-align: start;
+    width: 370px;
+  }
+
+  .registerLabel,
+  .registerForm {
+    flex-direction: row;
+  }
+
+  .registerForm {
+    gap: 0;
+  }
+}

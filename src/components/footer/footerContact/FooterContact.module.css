@@ -1,0 +1,55 @@
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footerContact li {
+  display: flex;
+  gap: 15px;
+  line-height: 26px;
+}
+
+.footerTitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footerLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.address::before {
+  content: url("../../../assets/icons/address.png");
+}
+
+.phone::before {
+  content: url("../../../assets/icons/phone.png");
+}
+
+.mail::before {
+  content: url("../../../assets/icons/mail.png");
+}
+
+.web::before {
+  content: url("../../../assets/icons/web.png");
+}
+
+@media (min-width: 640px) {
+  .footerContact {
+    flex-shrink: 1;
+    flex-basis: 450px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footerContact {
+    flex-basis: 268px;
+  }
+}

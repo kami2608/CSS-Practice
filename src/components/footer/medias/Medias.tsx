@@ -1,10 +1,10 @@
 import type { FC } from "react";
-import { mediaOptions } from "../../data/mediaOptions";
-import styles from "./Footer.module.css";
+import styles from "./Medias.module.css";
+import { mediaOptions } from "../../../data/mediaOptions";
 
 const Medias: FC = () => {
   return (
-    <div className={styles.footerMedia}>
+    <div className={styles.medias}>
       {mediaOptions.map((media, index) => (
         <a key={index} href={media.href}>
           <img src={media.icon} alt={media.alt} />
