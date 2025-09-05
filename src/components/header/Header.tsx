@@ -1,22 +1,28 @@
-import { useState, type FC } from "react";
+import { useEffect, useState, type FC } from "react";
 import Logo from "./logo/Logo";
 import NavbarPC from "./navbar-pc/NavbarPC";
 import NavbarSP from "./navbar-sp/NavbarSP";
-import ControllerButtonsSP from "./controller-buttons-sp/ControllerButtonsSP";
 import styles from "./Header.module.css";
 
-
 const Header: FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPC, setIsPC] = useState(window.innerWidth >= 1024);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsPC(window.innerWidth >= 1024);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <header className={styles.header}>
       <Logo />
-      <ControllerButtonsSP
-        isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
-      />
-      <NavbarPC />
-      <NavbarSP isMenuOpen={isMenuOpen} /> 
+      {isPC ? <NavbarPC /> : <NavbarSP />}
     </header>
   );
 };

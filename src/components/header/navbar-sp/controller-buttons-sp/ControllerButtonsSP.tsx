@@ -1,8 +1,8 @@
 import type { FC } from "react";
-import Button from "../../common/button/Button";
 import { IoClose } from "react-icons/io5";
 import styles from "./ControllerButtonsSP.module.css";
-import iconMenu from "../../../assets/IconMenu.png";
+import iconMenu from "../../../../assets/IconMenu.png";
+import Button from "../../../common/button/Button";
 
 interface ControllerButtonsSPProps {
   isMenuOpen: boolean;

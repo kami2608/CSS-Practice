@@ -18,8 +18,8 @@
   color: var(--color-highlight);
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .btnControllerSP {
     display: none;
   }
-}
+} */

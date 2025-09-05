@@ -19,8 +19,8 @@
   transition: top 0.3s ease;
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .navbarSP {
     display: none;
   }
-}
+} */

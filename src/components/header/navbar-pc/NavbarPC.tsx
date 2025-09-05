@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import styles from "./NavbarPC.module.css";
 import { menuOptions } from "../../../paths/MenuOptions";
-import NavbarItem from "../navbar-items/NavbarItem";
 import AuthenButtons from "../authen-buttons/AuthenButtons";
+import NavbarItem from "./navbar-items-pc/NavbarItem";
 
 const NavbarPC: FC = () => {
   return (

@@ -1,21 +1,24 @@
-import { type FC } from "react";
+import { useState, type FC } from "react";
 import styles from "./NavbarSP.module.css";
 import clsx from "clsx";
 import { menuOptions } from "../../../paths/MenuOptions";
-import NavbarItem from "../navbar-items/NavbarItem";
 import AuthenButtons from "../authen-buttons/AuthenButtons";
-interface NavbarSPProps {
-  isMenuOpen: boolean;
-}
+import ControllerButtonsSP from "./controller-buttons-sp/ControllerButtonsSP";
+import NavbarItem from "./navbar-items-sp/NavbarItem";
 
-const NavbarSP: FC<NavbarSPProps> = ({ isMenuOpen }) => {
+const NavbarSP: FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
+      <ControllerButtonsSP
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
       <nav className={clsx(styles.navbarSP, isMenuOpen && styles.navbarSPOpen)}>
         {menuOptions.map((menu, index) => (
           <NavbarItem menu={menu} index={index} />
         ))}
-        <AuthenButtons/>
+        <AuthenButtons />
       </nav>
     </>
   );

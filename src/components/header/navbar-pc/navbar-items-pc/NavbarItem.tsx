@@ -1,7 +1,7 @@
 import type { FC } from "react";
-import type { MenuOption } from "../../../paths/MenuOptions";
 import styles from "./NavbarItem.module.css";
 import clsx from "clsx";
+import type { MenuOption } from "../../../../paths/MenuOptions";
 
 interface NavbarItemProps {
   menu: MenuOption;

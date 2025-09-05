@@ -1,8 +1,8 @@
-.PC {
+/* .PC {
   display: none;
-}
+} */
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) { */
   .PC {
     display: flex;
     gap: 30px;
@@ -18,7 +18,7 @@
   .authenBtnsPC {
     display: block;
   }
-}
+/* } */
 
 @media (min-width: 1536px) {
   .navbarPC {
