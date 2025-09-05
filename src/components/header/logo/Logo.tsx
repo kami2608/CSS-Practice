@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import styles from "./logo.module.css";
+import styles from "./Logo.module.css";
 import logo from "../../../assets/Logo.png";
 
 const Logo: FC = () => {
