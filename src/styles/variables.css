@@ -1,5 +1,15 @@
 :root {
-    --color-primary: #5E5E5E;
-    --color-highlight: #FE3D06;
-    --color-secondary: #002657;
+  --color-primary: #5e5e5e;
+  --color-highlight: #fe3d06;
+  --color-secondary: #002657;
+  --color-text: #e6e6e6;
+  --color-active: #f1a800;
+  --color-navi: #0016B4;
+
+  --gradient-orange: linear-gradient(to right, #fe3d06, #f0a700);
+
+  --font-sm: 1rem;
+
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-utmAvo: "UTMAvo", sans-serif;
 }
