@@ -32,7 +32,7 @@
   text-decoration: underline;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .footerAbout {
     flex-basis: 168px;
   }
