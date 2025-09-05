@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import styles from "./NavieduInfo.module.css";
-import type { Service } from "../../../data/navieduServices";
+import type { Service } from "../../../../data/navieduServices";
 
 interface NavieduInfoProps {
   service: Service;

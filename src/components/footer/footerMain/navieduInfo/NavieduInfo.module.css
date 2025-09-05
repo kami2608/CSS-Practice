@@ -24,8 +24,12 @@
   color: white;
 }
 
-.footerAbout .active {
+.footerLinks a:hover {
   color: var(--color-active);
+}
+
+.footerAbout .active {
+  text-decoration: underline;
 }
 
 @media (min-width: 1280px) {

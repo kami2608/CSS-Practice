@@ -1,9 +1,9 @@
 import type { FC } from "react";
 import styles from "./FooterMain.module.css";
 import { navieduServices } from "../../../data/navieduServices";
-import FooterIntro from "../footerIntro/FooterIntro";
-import NavieduInfo from "../navieduInfo/NavieduInfo";
-import FooterContact from "../footerContact/FooterContact";
+import NavieduInfo from "./navieduInfo/NavieduInfo";
+import FooterContact from "./footerContact/FooterContact";
+import FooterIntro from "./footerIntro/FooterIntro";
 
 const FooterMain: FC = () => {
   return (

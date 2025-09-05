@@ -5,14 +5,6 @@
   gap: 25px;
 }
 
-@media (min-width: 640px) {
-  .footerMain {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-}
-
 @media (min-width: 1280px) {
   .footerMain {
     flex-direction: row;

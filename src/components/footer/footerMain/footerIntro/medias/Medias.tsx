@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import styles from "./Medias.module.css";
-import { mediaOptions } from "../../../data/mediaOptions";
+import { mediaOptions } from "../../../../../data/mediaOptions";
 
 const Medias: FC = () => {
   return (
