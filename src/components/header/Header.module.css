@@ -5,125 +5,14 @@
   padding: 35px;
 }
 
-.header a {
-  font-size: var(--font-sm);
-  font-weight: 600;
-  color: var(--color-primary);
-  text-transform: capitalize;
-  text-decoration: none;
-}
-
-.header a:hover {
-  color: var(--color-highlight);
-}
-
-.header .active {
-  color: var(--color-secondary);
-  text-decoration: underline var(--color-highlight);
-  text-underline-offset: 6px;
-}
-
-.logo img {
-  height: 50px;
-  width: auto;
-}
-
-.menuPC {
-  display: none;
-}
-
-.btnPC {
-  display: none;
-}
-
-.loginBtn {
-  background-color: white;
-  border: 1px solid var(--color-highlight);
-  color: var(--color-highlight);
-}
-
-.signupBtn {
-  background-color: var(--color-secondary);
-  color: white;
-  border: none;
-}
-
-.btnControllerSP {
-  display: block;
-  z-index: 50;
-}
-
-.btnControllerSP button {
-  border: none;
-  background-color: transparent;
-}
-
-.btnControllerSP img {
-  width: 50px;
-  height: 50px;
-}
-
-.btnIcon {
-  font-size: 50px;
-  color: var(--color-highlight);
-}
-
-.menuSP {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  position: absolute;
-  top: -100vh;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  background-color: aliceblue;
-  border-bottom: 1px solid var(--color-primary);
-  align-items: center;
-  gap: 20px;
-  transition: top 0.3s ease;
-}
-
-.menuSPOpen {
-  top: 0;
-  transition: top 0.3s ease;
-}
-
-.btnSP {
-  display: flex;
-  gap: 20px;
-}
-
 @media (min-width: 1280px) {
   .header {
     padding: 35px 10%;
-  }
-  .menuSP {
-    display: none;
-  }
-  .menuPC {
-    flex: 1;
-    display: flex;
-    padding-bottom: 4px;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .btnPC {
-    display: flex;
-    gap: 20px;
-  }
-  .btnControllerSP {
-    display: none;
   }
 }
 
 @media (min-width: 1536px) {
   .header {
     padding: 35px 15%;
-  }
-  .menuPC {
-    gap: 3vw;
   }
 }

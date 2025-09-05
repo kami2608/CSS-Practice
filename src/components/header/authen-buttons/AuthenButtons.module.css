@@ -1,0 +1,18 @@
+.authenBtns {
+  display: flex;
+  gap: 20px;
+}
+
+.loginBtn {
+  background-color: white;
+  border: 1px solid var(--color-highlight);
+  color: var(--color-highlight);
+}
+
+.signupBtn {
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+}
+
+
