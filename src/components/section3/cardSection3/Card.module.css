@@ -1,0 +1,40 @@
+.cardContainer {
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.description {
+  color: white;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+@media (min-width: 1024px) {
+    .cardContainer {
+        flex-basis: 45%;
+        flex-grow: 1;
+    }
+}

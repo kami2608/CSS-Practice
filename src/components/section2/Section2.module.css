@@ -1,0 +1,38 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  overflow: hidden;
+  background: var(--color-section);
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  gap: 60px;
+  transition: transform 0.5s ease;
+}
+
+.slideBtn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+    .slideBtn {
+        display: none;
+    }
+
+    .main {
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 5%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,76 @@
+.sectionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  overflow: hidden;
+  background: var(--color-section);
+}
+
+.navbar {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.course,
+.activeCourse {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.course {
+  color: var(--color-secondary);
+}
+
+.activeCourse {
+  color: var(--color-highlight);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  min-width: 100%;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  gap: 60px;
+  transition: transform 0.5s ease;
+}
+
+.slideBtn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        gap: 5%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .page {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        align-items: start;
+    }
+}

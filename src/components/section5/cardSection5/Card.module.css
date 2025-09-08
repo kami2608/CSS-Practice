@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12.16px;
+  box-shadow: var(--shadow-sm);
+  background-color: white;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.title {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+.description {
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card button {
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  width: fit-content;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex-basis: 30%;
+  }
+}

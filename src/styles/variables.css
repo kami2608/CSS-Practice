@@ -1,5 +1,23 @@
 :root {
-    --color-primary: #5E5E5E;
-    --color-highlight: #FE3D06;
-    --color-secondary: #002657;
+  --color-primary: #5e5e5e;
+  --color-highlight: #fe3d06;
+  --color-secondary: #002657;
+  --color-text: #e6e6e6;
+  --color-active: #f1a800;
+  --color-navi: #0016b4;
+  --color-section: #0016b40d;
+  --color-light-orange: #F9DA95;
+
+  --gradient-orange: linear-gradient(to right, #fe3d06, #f0a700);
+  --gradient-blue: linear-gradient(to right, #002657, #0016b4);
+
+  --font-sm: 15px;
+
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-utmAvo: "UTMAvo", sans-serif;
+
+  --radius-circle: 50%;
+
+  --shadow-md: 1px 1px 4px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
 }

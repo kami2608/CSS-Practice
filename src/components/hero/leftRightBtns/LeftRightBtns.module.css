@@ -1,0 +1,32 @@
+.leftRightBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.leftRightBtns button {
+  border: none;
+  background-color: transparent;
+}
+
+.leftRightBtns button:hover {
+  opacity: 0.7;
+}
+
+.leftRightBtns button[disabled] {
+  opacity: 0.5;
+}
+
+.leftBtn img {
+  transform: rotateY(180deg);
+}
+
+.test {
+  color: red;
+}
+
+.test:hover {
+  background-color: red;
+  color: blue;
+}

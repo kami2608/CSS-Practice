@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 600px;
+}
+
+.card img {
+    padding-bottom: 15px;
+}
+
+.title {
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.description {
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+}

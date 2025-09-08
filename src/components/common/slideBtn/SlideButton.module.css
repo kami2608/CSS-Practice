@@ -1,0 +1,11 @@
+.slideBtn, .slideBtnActive {
+    width: 15px;
+    height: 15px;
+    border-radius: var(--radius-circle);
+    background-color: var(--color-text);
+    border: none;
+}
+
+.slideBtnActive {
+    background: var(--gradient-orange);
+}
